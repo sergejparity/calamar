@@ -1,0 +1,12 @@
+{
+  "archives": [
+    {
+      "network": "versi",
+      "providers": [
+        {
+          "explorerUrl": "https://calamar.parity-versi.parity.io/graphql"
+        }
+      ]
+    }
+  ]
+}
