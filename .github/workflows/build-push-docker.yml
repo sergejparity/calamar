@@ -22,8 +22,6 @@ env:
 jobs:
   build-publish-docker:
     runs-on: ubuntu-latest
-    container:
-      - paritytech/buildah:1.31
     steps:
       - name: Checkout
         uses: actions/checkout@v4
