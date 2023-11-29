@@ -1,5 +1,5 @@
 import { ArchiveEntry, Network } from "@subsquid/archive-registry";
-import archivesJson from "../../archives.json";
+import archivesJson from "../archives.json";
 import networksJson from "@subsquid/archive-registry/networks.json";
 
 import squidsJson from "../squids.json";
