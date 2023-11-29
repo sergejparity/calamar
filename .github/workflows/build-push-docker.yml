@@ -16,7 +16,6 @@ on:
 env:
   DOCKERFILE: "Dockerfile"
   IMAGE_NAME: sergejparity/calamar
-  IMAGE_TAG: "${GITHUB_REF_NAME}-${GITHUB_SHA::7}"
 
 jobs:
   build-publish-docker:
@@ -24,6 +23,9 @@ jobs:
     steps:
       - name: Checkout
         uses: actions/checkout@v4
+
+      - name: Set up tag
+        run: echo "IMAGE_TAG=${GITHUB_REF_NAME}-${GITHUB_SHA::7}" >> $GITHUB_ENV
 
       - name: Log in to Docker Hub
         uses: docker/login-action@v3
