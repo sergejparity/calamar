@@ -27,7 +27,7 @@ on:
 env:
   DOCKERFILE: "Dockerfile"
   IMAGE_NAME: sergejparity/calamar
-  PUSH_IMAGE: false # decision whether to push image will be taken at a later step
+  PUSH_IMAGE: false # decision whether to push image will be taken at a later step. Testing is done without pushing.
 
 jobs:
   build-publish-docker:
